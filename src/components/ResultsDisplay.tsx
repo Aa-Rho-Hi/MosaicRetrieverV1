@@ -154,7 +154,7 @@ export function ResultsDisplay({ query, requestedEngine, response, topK }: Resul
             <motion.pre
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
-              className="mt-3 text-sm bg-neutral-950 border border-neutral-800 rounded-xl p-3 overflow-auto text-neutral-300"
+              className="mt-3 text-sm bg-neutral-950 border border-neutral-800 rounded-xl p-3 overflow-auto whitespace-pre-wrap break-words text-neutral-300"
             >
               {JSON.stringify(response.debug, null, 2)}
             </motion.pre>
